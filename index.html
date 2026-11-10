@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juniper Walks · Dog walking in Portland</title>
+<style>
+  :root { --ink: #1f2a24; --muted: #5d6b63; --paper: #fbf8f2; --leaf: #2f6b4f; --sun: #f2b544; --card: #ffffff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.55; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; }
+  .logo { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
+  .logo span { color: var(--leaf); }
+  nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; font-size: 15px; color: var(--muted); }
+  nav a { text-decoration: none; }
+  .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; padding: 48px 0 72px; }
+  h1 { font-size: 54px; line-height: 1.05; letter-spacing: -0.035em; margin: 0 0 18px; }
+  h1 em { font-style: normal; color: var(--leaf); }
+  .lead { font-size: 19px; color: var(--muted); margin: 0 0 30px; max-width: 30em; }
+  .btn { display: inline-block; background: var(--leaf); color: #fff; text-decoration: none; font-weight: 600; padding: 14px 26px; border-radius: 999px; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid #d8d2c4; margin-left: 10px; }
+  .photo { aspect-ratio: 4 / 4.4; border-radius: 28px; background: radial-gradient(circle at 30% 30%, #ffd98a, var(--sun) 45%, #e0952a); position: relative; overflow: hidden; }
+  .photo .dog { position: absolute; inset: 0; display: grid; place-items: center; font-size: 170px; }
+  .badge { position: absolute; left: 22px; bottom: 22px; background: #fff; border-radius: 16px; padding: 12px 16px; font-size: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+  .badge b { display: block; font-size: 18px; }
+  section { padding: 64px 0; }
+  h2 { font-size: 34px; letter-spacing: -0.02em; margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 32px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: var(--card); border-radius: 20px; padding: 26px; border: 1px solid #ece6d9; }
+  .card .ico { font-size: 30px; }
+  .card h3 { margin: 12px 0 6px; font-size: 19px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .price { font-size: 30px; font-weight: 800; margin: 14px 0 0; }
+  .price small { font-size: 15px; font-weight: 500; color: var(--muted); }
+  .quotes .card p { color: var(--ink); font-size: 16px; }
+  .quotes .who { margin-top: 14px; color: var(--muted); font-size: 14px; }
+  .cta { background: var(--leaf); color: #fff; border-radius: 28px; padding: 48px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+  .cta h2 { color: #fff; }
+  .cta p { margin: 0; opacity: .85; }
+  .cta .btn { background: var(--sun); color: var(--ink); }
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 760px) {
+    .hero, .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 40px; }
+    nav ul { display: none; }
+    .cta { flex-direction: column; align-items: flex-start; padding: 32px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">Juniper <span>Walks</span></div>
+      <ul><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#book">Book</a></li></ul>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <h1>Happy dogs, <em>tired</em> dogs.</h1>
+        <p class="lead">Small-group and solo walks around Southeast Portland. GPS-tracked, photo updates after every walk, and the same friendly walker every week.</p>
+        <a class="btn" href="#book">Book a meet &amp; greet</a><a class="btn ghost" href="#pricing">See prices</a>
+      </div>
+      <div class="photo"><div class="dog">🐕</div><div class="badge"><b>4.9 ★</b>from 120+ local owners</div></div>
+    </header>
+  </div>
+
+  <section id="services"><div class="wrap">
+    <h2>What we do</h2>
+    <p class="sub">Every walk ends with a photo and a short note, straight to your phone.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🦮</div><h3>Solo walks</h3><p>One-on-one time for dogs who like their space, or are still learning their manners.</p></div>
+      <div class="card"><div class="ico">🐾</div><h3>Group adventures</h3><p>Up to four friendly dogs, matched by size and energy, out on the trails for an hour.</p></div>
+      <div class="card"><div class="ico">🏠</div><h3>Drop-in visits</h3><p>Feeding, fresh water, a cuddle and a quick potty break while you're at work.</p></div>
+    </div>
+  </div></section>
+
+  <section id="pricing"><div class="wrap">
+    <h2>Simple pricing</h2>
+    <p class="sub">No sign-up fees. Cancel any time before 8 pm the night before.</p>
+    <div class="grid">
+      <div class="card"><h3>Drop-in</h3><p>30 minutes at home</p><div class="price">$22 <small>/ visit</small></div></div>
+      <div class="card"><h3>Group walk</h3><p>60 minutes, up to 4 dogs</p><div class="price">$28 <small>/ walk</small></div></div>
+      <div class="card"><h3>Solo walk</h3><p>45 minutes, just your dog</p><div class="price">$35 <small>/ walk</small></div></div>
+    </div>
+  </div></section>
+
+  <section id="reviews" class="quotes"><div class="wrap">
+    <h2>Owners say</h2>
+    <p class="sub">A few words from the neighborhood.</p>
+    <div class="grid">
+      <div class="card"><p>“Biscuit runs to the door when she hears Juniper's van. The photo updates make my whole day.”</p><div class="who">Maya, Hawthorne</div></div>
+      <div class="card"><p>“Reliable, kind, and somehow my anxious rescue now loves group walks.”</p><div class="who">Daniel, Sellwood</div></div>
+      <div class="card"><p>“Booked a drop-in on two hours' notice and they made it work. Lifesavers.”</p><div class="who">Priya, Richmond</div></div>
+    </div>
+  </div></section>
+
+  <section id="book"><div class="wrap">
+    <div class="cta">
+      <div><h2>Let's meet your dog</h2><p>The first meet &amp; greet is free. We reply within a day.</p></div>
+      <a class="btn" href="mailto:hello@example.com">Email us</a>
+    </div>
+  </div></section>
+
+  <footer><div class="wrap">© 2026 Juniper Walks · Southeast Portland, Oregon</div></footer>
+<!-- Free AI chatbot: https://onetagai.com -->
+<script async src="https://onetagai.com/widget.js"
+  data-key="ot_demo000000000000000000000"
+  data-title="Ask Juniper Walks"
+  data-greeting="Hi! Ask me about walks, prices or booking."
+  data-color="#2f6b4f"
+  data-system="You are the assistant for Juniper Walks, a dog walking business. Answer from the page in two short sentences, no markdown. If the page does not say, ask them to email hello@example.com."
+></script>
+</body>
+</html>
